@@ -1,0 +1,79 @@
+<!-- CSS Border - Individual Sides
+From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.
+
+In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left): -->
+
+<!-- So, here is how it works:
+
+If the border-style property has four values:
+
+border-style: dotted solid double dashed;
+top border is dotted
+right border is solid
+bottom border is double
+left border is dashed
+If the border-style property has three values:
+
+border-style: dotted solid double;
+top border is dotted
+right and left borders are solid
+bottom border is double
+If the border-style property has two values:
+
+border-style: dotted solid;
+top and bottom borders are dotted
+right and left borders are solid
+If the border-style property has one value:
+
+border-style: dotted;
+all four borders are dotted -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        p.one{
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dashed;
+            border-left: double;
+        }
+
+        p.two{
+            border-style: dotted solid;
+        }
+
+        p.three{
+            border-style: dotted solid double dashed;
+        }
+
+        p.four{
+            border-style: dotted solid double;
+        }
+
+        p.five{
+            border-style: dotted solid;
+        }
+
+        p.six{
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <h2>Individual Border Sides</h2>
+    <p class="one">4 different border styles.</p>
+    <p class="two">2 different border styles.</p>
+    <p class="three">4 different border styles.</p>
+    <p class="four">3 different border styles.</p>
+    <p class="five">2 different border styles.</p>
+    <p class="six">1 border style.</p>
+</body>
+</html>
