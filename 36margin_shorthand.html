@@ -1,0 +1,94 @@
+<!-- Margin - Shorthand Property
+To shorten the code, it is possible to specify all the margin properties in one property.
+
+The margin property is a shorthand property for the following individual margin properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+So, here is how it works:
+
+If the margin property has four values:
+
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.one{
+            border: 1px solid black;
+            margin: 25px 50px 75px 100px;
+            background-color: lightblue;
+        }
+
+        /* If the margin property has three values:
+
+        margin: 25px 50px 75px;
+        top margin is 25px
+        right and left margins are 50px
+        bottom margin is 75px */
+        p.two{
+            border: 1px solid green;
+            margin: 25px 50px 75px;
+            background-color: orange;
+        }
+
+        /* If the margin property has two values:
+
+        margin: 25px 50px;
+        top and bottom margins are 25px
+        right and left margins are 50px */
+
+        p.three{
+            border: 1px solid orange;
+            margin: 25px 50px;
+            background-color:red;
+        }
+
+        /* If the margin property has one value:
+
+        margin: 25px;
+        all four margins are 25px */
+        p.four{
+            border: 1px solid darkcyan;
+            margin: 25px;
+            background-color: lightcoral;
+        }
+
+        /* The auto Value
+You can set the margin property to auto to horizontally center the element within its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins. */
+
+        p.five{
+            width: 300px;
+            margin: auto;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>The margin shorthand property- 4 values</h2>
+    <p class="one">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px</p>
+    <h2>margin property- 3 values</h2>
+    <p class="two">This div element has a top margin of 25px, a right and left margin of 50px, and a bottom margin of 75px.</p>
+    <h2>margin property- 2 values</h2>
+    <p class="three">This div element has a top and bottom margin of 25px, and a right and left margin of 50px.</p>
+    <h2>The margin shorthand property- 1 value</h2>
+    <p class="four">This div element has a top, bottom, left, and right margin of 25px.</p>
+    <h2>auto value</h2>
+    <h2>Use of margin: auto</h2>
+    <p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+    <p class="five">This div will be horizontally centered because it has margin: auto;</p>
+</body>
+</html>
