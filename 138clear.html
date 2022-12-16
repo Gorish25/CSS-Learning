@@ -1,0 +1,55 @@
+<!-- The clear Property
+When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+
+The clear property specifies what should happen with the element that is next to a floating element.
+
+The clear property can have one of the following values:
+
+none - The element is not pushed below left or right floated elements. This is default
+left - The element is pushed below left floated elements
+right - The element is pushed below right floated elements
+both - The element is pushed below both left and right floated elements
+inherit - The element inherits the clear value from its parent
+
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border: 3px solid #73ad21;
+            padding: 10px;
+            float: left;
+        }
+        .b{
+            border: 3px solid red;
+            padding: 10px;
+        }
+
+        .c{
+            border: 3px solid #73ad21;
+            padding: 10px;
+            float: left;
+        }
+        .d{
+            border: 3px solid red;
+            padding: 10px;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Without clear</h2>
+    <div class="a">div 1</div>
+    <div class="b">div 2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+
+    <h2>With clear</h2>
+    <div class="c">div3</div>
+    <div class="d">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+</body>
+</html>
